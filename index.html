@@ -5,12 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title> HTML </title>
+    <title> HTML Task 01 </title>
 </head>
 <body dir="ltr">
     <h1>
-        Gaza Sky Geeks --2
+        Basic HTML Form
     </h1>
+    
+    <form action="" method="post">
+
+    <!-- Qustion [ 1 ] -->
+
+    <fieldset>
+        <legend>Name</legend>        
+            <label for="first-name">First Name</label> <br/>
+            <input type="text" name="first-name" id="first-name"><br/>
+            <label for="last-name">Last Name</label> <br/>
+            <input type="text" name="last-name" id="last-name">
+    </fieldset>
+
+    <fieldset>
+        <legend>Other Qustion</legend>
+
+        <!-- Qustion [ 2 ] -->
+
+        <h3>Choose a Drink:</h3>
+
+        <input type="radio" name="drink" id="coffe"> 
+        <label for="coffe">Coffe</label><br>
+
+        <input type="radio" name="drink" id="tea"> 
+        <label for="tea">Tea</label><br>
+
+        <input type="radio" name="drink" id="hot-chocolate"> 
+        <label for="hot-chocolate">Hot Chocolate</label><br>
+
+
+        <!-- Qustion [ 3 ] -->
+
+        <h3>What Ice Cream do you like?</h3>
+
+            <input type="checkbox" id="chooclate">
+            <label for="chooclate">Chooclate</label><br>
+
+            <input type="checkbox" id="chooclate-pudding">
+            <label for="chooclate-pudding">Chooclate Pudding</label><br>
+
+            <input type="checkbox" id="vaniila">
+            <label for="vaniila">Vaniila</label><br>
+
+            <input type="checkbox" id="strawberry">
+            <label for="strawberry">Strawberry</label><br>
+
+        <!-- Qustion [ 4 ] -->
+
+        <h3>Select a School</h3>
+
+        <select name="school">
+            <option value="ps">Palstine</option>
+            <option value="aq">Al-Aqsa</option>
+            <option value="az">Al-Azhar</option>
+            <option value="is">Islamic</option>
+        </select>
+
+        <!-- Qustion [ 5 ] -->
+
+
+        <h3>Please Provide Comments:</h3>
+        <textarea name="comment" cols="30" rows="10">
+
+        </textarea>
+
+    </fieldset>
+    
+    <input type="submit" value="Submit">
+</form>    
+
     <script src="app.js"></script>
 </body>
 </html>
