@@ -1,5 +1,166 @@
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 10px;
-    margin: 1%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+    background-color: rgb(32,33,36);
+}
+
+/* Navbar Section Design Start Here .. */
+
+nav {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li a, button { 
+    display: inline-block;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 18px;
+    margin-right: 15px;
+}
+
+nav > ul > li a:hover {
+    text-decoration: underline;
+}
+
+nav > ul > li > button {
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 6px;
+    background-color: #8ab4f8;
+    color:  #202124;
+    outline: none;
+    border: none;
+}
+
+nav > ul > li > button:hover {
+    cursor: pointer;
+}
+
+/* Navbar Section Design End Here .. */
+
+
+
+/* Main Content Section Design Start Here .. */
+
+main {
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-field {
+    width: 80%;
+    margin-top: 3%;
+    height: 42px;
+    border: 0.1px solid #bdc1c6;
+    color: #bdc1c6;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.search-field > input {
+    width: 80%;
+    outline: none;
+    background: none;
+    border: none;
+    color: #bdc1c6;
+    font-size: 16px;
+}
+
+.search-field:hover {
+    background-color: #303134;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+section > button {
+    color: rgb(232, 234, 237);
+    background-color: #303134;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+section > button:hover {
+    cursor: pointer;
+    border: 1px solid #bdc1c6;
+}
+
+main > span {
+    font-size: 13px;
+    color: rgb(189, 193, 198);
+    padding: 18px;
+}
+
+main > span > a {
+    text-decoration: none;
+    color: #4788c2;
+}
+
+main > span > a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main Content Section Design End Here .. */
+
+
+
+/* footer Section Design Start Here .. */
+
+footer {
+    width: 100%;
+    height: 95px;
+    position: absolute;
+    bottom: 0;
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > ul {
+    margin: 0% 1.5%;
+}
+
+footer > ul > li {
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+footer > ul > li > a {
+    color: rgb(153, 157, 162);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+/* footer Section Design End Here .. */
+
