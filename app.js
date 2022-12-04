@@ -23,3 +23,11 @@ random.addEventListener('click', () => {
 Input.addEventListener('keypress', () => {
     paint.style.backgroundColor = Input.value;
 })
+
+paint.addEventListener('mousemove', () => {
+    var RandomNum = Math.floor(Math.random()*8);
+    setTimeout(() => {
+        paint.style.backgroundColor = RandomColors[RandomNum];
+        Input.value = RandomColors[RandomNum];
+    }, '500')
+})
