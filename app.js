@@ -1,33 +1,31 @@
-const RandomColors = [
-    '#ff0276', 
-    '#eba80c', 
-    '#ebd40c', 
-    '#CD3333', 
-    '#C5FF6C', 
-    '#ffa7a7', 
-    '#a7e5a2', 
-    '#73993d', 
-    '#d6f5f3'
-];
+var timer = document.getElementById('timer');
+var start = document.getElementById('start');
+var reset = document.getElementById('reset');
 
-var random = document.getElementById('random');
-var paint = document.getElementById('paint');
-var Input = document.getElementById('input');
+var setTimer = document.getElementById('set-timer')
 
-random.addEventListener('click', () => {
-    var RandomNum = Math.floor(Math.random()*8);
-    paint.style.backgroundColor = RandomColors[RandomNum];
-    Input.value = RandomColors[RandomNum];
+var defaultTimer = 5;
+var time = defaultTimer * 60;
+
+setInterval(Timer, 1000);
+
+function Timer ()  {
+        let minutes = Math.floor(time /60);
+        let seconds = time % 60;
+        timer.innerHTML = `${minutes}m: ${seconds}s`;
+        if (time >= 1 ) {
+            time--;
+        } else {
+            time = 0;
+            timer.style.color = 'red';
+        }
+}
+
+start.addEventListener('click', () => {
+        time = setTimer.value * 60;
 })
 
-Input.addEventListener('keypress', () => {
-    paint.style.backgroundColor = Input.value;
-})
-
-paint.addEventListener('mousemove', () => {
-    var RandomNum = Math.floor(Math.random()*8);
-    setTimeout(() => {
-        paint.style.backgroundColor = RandomColors[RandomNum];
-        Input.value = RandomColors[RandomNum];
-    }, '500')
+reset.addEventListener('click', () => {
+    time = 5 * 60;
+    timer.innerHTML = `${5}: ${00}`;
 })

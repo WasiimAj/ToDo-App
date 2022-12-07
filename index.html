@@ -14,23 +14,18 @@
 </head>
 <body>
 
-
-    <header>
-        <h3>CRAZY COLORS</h3>
-    </header>
-
-    <main>
-        <section id="paint" class="left-section">
-                PAINT ME
-        </section>
-
-        <section class="control-section">
-            <button id="random" class="random">CHOOSE RANDOM COLOR</button>
-            <div class="gray">OR</div>
-            <div class="gray">Type HEXA Color </div>
-            <input id="input" />
-        </section>
-    </main>
+    <div class="timer">
+        <ul>
+            <li>TIMER</li>
+            <li>STOPWATCH</li>
+        </ul>
+        <input id="set-timer" type="number" placeholder="5m 00s">
+        <div id="timer" class="timer-box"></div>
+        <div class="control">
+            <button id="start" class="btn start">START</button>
+            <button id="reset" class="btn reset">RESET</button>
+        </div>
+    </div>
 
     <!-- Script Link -->
     <script src="app.js"></script>
